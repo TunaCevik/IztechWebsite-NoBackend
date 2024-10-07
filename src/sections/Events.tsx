@@ -131,14 +131,14 @@ export const EventsSection = () => {
           devam ettik ve gelecekteki projelerimizle topluluğumuzu daha da
           büyütmeyi hedefliyoruz."
         ></SectionHeader>
-        <div className="md:mt-20 flex flex-col mt-10 gap-20">
+        <div className="md:mt-20 flex flex-col mt-10 gap-19">
           {pastEvents.map((event, projectIndex) => (
             <Card
               key={event.title}
               className=" pb-0 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
               style={{
                 position: "sticky",
-                top: `calc(64px + ${projectIndex * 40}px)`,
+                top: `calc(64px + ${projectIndex * 30}px)`,
               }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
@@ -183,9 +183,8 @@ export const EventsSection = () => {
                     <Image
                       src={event.image}
                       alt={event.title}
-                      layout="fill"
-                      objectFit="cover"
-                      objectPosition="center"
+                      fill
+                      style={{ objectFit: "cover", objectPosition: "center" }}
                       priority={true} // Performans için isteğe bağlı
                     />
                   </div>

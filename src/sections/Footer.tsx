@@ -10,7 +10,7 @@ const footerLinks = [
     href: "https://www.instagram.com/iyte_blockchain/",
   },
   {
-    title: "Instagram",
+    title: "LinkedIn",
     href: "https://www.linkedin.com/company/i%CC%87yte-blockchain-toplulu%C4%9Fu",
   },
   {
